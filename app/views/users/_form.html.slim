@@ -5,6 +5,7 @@
     = f.input :name
     = f.input :user_type, collection: ['Founder', 'Volunteer/Expert',
                                        'Government/Authority', 'Problem owner']
+    = f.association :skills
 
   .form-actions
     = f.button :submit
