@@ -1,0 +1,10 @@
+= simple_form_for(@user) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :name
+    = f.input :user_type, collection: ['Founder', 'Volunteer/Expert',
+                                       'Government/Authority', 'Problem owner']
+
+  .form-actions
+    = f.button :submit

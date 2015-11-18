@@ -1,0 +1,19 @@
+p#notice
+  = notice
+p
+  strong
+    | Name:
+  = @problem.name
+p
+  strong
+    | Description:
+  = @problem.description
+p
+  strong
+    | Related projects
+  - @problem.projects.each do |project|
+    = project.name
+
+= link_to 'Edit', edit_problem_path(@problem)
+|  |
+= link_to 'Back', problems_path
