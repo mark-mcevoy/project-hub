@@ -5,7 +5,6 @@ gem 'jquery-rails'
 gem 'rails', '4.2.2'
 gem 'sass-rails', '~> 5.0'
 gem 'simple_form'
-gem 'slim-rails'
 gem 'spring'
 gem 'turbolinks'
 
